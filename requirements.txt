@@ -1,0 +1,19 @@
+# FastAPI Web Server
+fastapi
+uvicorn
+
+# LangChain Components
+langchain-core
+langchain-community
+langchain-text-splitters
+langchain-groq
+
+# Document Processing
+pandas
+openpyxl          # Required by pandas for .xlsx files
+pypdf             # Required by PyPDFLoader
+
+# Embeddings & Vector Store
+sentence-transformers
+chromadb
+gunicorn
