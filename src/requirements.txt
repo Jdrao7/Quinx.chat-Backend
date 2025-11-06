@@ -16,3 +16,4 @@ pypdf             # Required by PyPDFLoader
 # Embeddings & Vector Store
 sentence-transformers
 chromadb
+gunicorn

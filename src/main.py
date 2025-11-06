@@ -165,19 +165,3 @@ async def health_check():
     """Health check endpoint"""
     return {"status": "healthy", "version": "2.0.0"}
 
-
-if __name__ == "__main__":
-    print("Starting RAG System with PDF/Excel Support...")
-    print(f"Vector store path: {Config.VECTOR_STORE_PATH}")
-    print(f"Upload directory: {Config.UPLOAD_DIR}")
-    print("\nStarting FastAPI server on http://localhost:8000")
-    print("API docs available at http://localhost:8000/docs")
-    print("\nEndpoints:")
-    print("  POST /upload-pdf - Upload a PDF file")
-    print("  POST /upload-excel - Upload an Excel file")
-    print("  POST /upload-multiple - Upload multiple files")
-    print("  POST /query - Query the documents")
-    print("  GET  /stats - Get database statistics")
-    print("  DELETE /reset - Reset the database")
-    
-    uvicorn.run(app, host="0.0.0.0", port=8000)
